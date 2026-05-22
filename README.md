@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The Movie Catalog RESTful API is a web-based application developed using ASP.NET Core Web API. The project demonstrates the implementation of RESTful services for managing movies and directors. It supports CRUD operations, association routing, attribute routing, API testing using Postman, and HTTP traffic debugging using Fiddler.
+The Movie Catalog RESTful API is a web-based application developed using ASP.NET Core Web API. The project demonstrates the implementation of RESTful services for managing movies and directors. It supports CRUD operations, association routing, attribute routing, API testing using Swagger and Postman, and HTTP traffic debugging using Fiddler.
 
 The API allows users to:
 - Create movies and directors
@@ -62,26 +62,32 @@ The API allows users to:
 ```text
 MovieCatalogAPI
 │
-├── Controllers
-│   ├── MoviesController.cs
-│   └── DirectorsController.cs
-│
-├── Models
-│   ├── Movie.cs
-│   └── Director.cs
-│
-├── Properties
-│   └── launchSettings.json
-│
-├── Program.cs
-│
-├── appsettings.json
+├── MovieCatalogAPI
+│   ├── Controllers
+│   │   ├── DirectorsController.cs
+│   │   └── MoviesController.cs
+│   │
+│   ├── Models
+│   │   ├── Director.cs
+│   │   └── Movie.cs
+│   │
+│   ├── Properties
+│   │
+│   ├── MovieCatalogAPI.csproj
+│   ├── MovieCatalogAPI.http
+│   ├── Program.cs
+│   ├── WeatherForecast.cs
+│   ├── appsettings.Development.json
+│   └── appsettings.json
 │
 ├── Screenshots
-│   ├── Swagger.png
-│   ├── Postman.png
-│   └── Fiddler.png
+│   ├── swagger testing.png
+│   ├── postman testing.png
+│   └── fiddler testing.png
 │
+├── .gitattributes
+├── .gitignore
+├── MovieCatalogAPI.slnx
 └── README.md
 ```
 
@@ -173,17 +179,7 @@ Swagger UI is used to:
 
 ## Swagger Screenshot
 
-Add Swagger UI screenshot here:
-
-```text
-Screenshots/Swagger.png
-```
-
-Markdown image example:
-
-```markdown
-![Swagger Screenshot](Screenshots/Swagger.png)
-```
+![Swagger Screenshot](Screenshots/swagger testing.png)
 
 ---
 
@@ -197,17 +193,7 @@ Postman is used for:
 
 ## Postman Screenshot
 
-Add Postman screenshot here:
-
-```text
-Screenshots/Postman.png
-```
-
-Markdown image example:
-
-```markdown
-![Postman Screenshot](Screenshots/Postman.png)
-```
+![Postman Screenshot](Screenshots/postman testing.png)
 
 ---
 
@@ -221,17 +207,7 @@ Fiddler Classic is used for:
 
 ## Fiddler Screenshot
 
-Add Fiddler screenshot here:
-
-```text
-Screenshots/Fiddler.png
-```
-
-Markdown image example:
-
-```markdown
-![Fiddler Screenshot](Screenshots/Fiddler.png)
-```
+![Fiddler Screenshot](Screenshots/fiddler testing.png)
 
 ---
 
